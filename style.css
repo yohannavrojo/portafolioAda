@@ -55,26 +55,14 @@ header .nav .nav-menu .nav-menu-item .nav-link:hover{
         height: 60px;
     }
   
-    header .nav .nav-menu{
-        flex-direction: column;
-        margin: 0;
-        list-style: none;
-        /* background-color: #1cb9c2ed; */
-        padding: 20px 0;
-        margin-top: 41px;
+     header .nav .nav-menu{ 
         align-items: center;
         width: 100%;
-        overflow-y: auto;
         z-index: 0;
-        height: 55em;
-}
+       
+} 
     
-    
-    header .nav .nav-menu .nav-menu-item {
-        line-height: 0px;
-        padding-top: 10em;
-        padding-right: 5em;
-    } 
+
     
     
     header .nav .nav-menu .nav-menu-item .nav-link:hover{
@@ -537,6 +525,7 @@ footer{
  margin: 14px;
     text-decoration: none;
    font-size: 20px;
+   color: white;
    
 }
 footer .nave-ul .nave-li .ai:hover{
@@ -564,4 +553,11 @@ background: #9de9ed;
     flex-direction: column;
 }
 
+}
+
+@media(max-width:506px){
+footer{
+    width: 36rem;
+}
+    
 }
