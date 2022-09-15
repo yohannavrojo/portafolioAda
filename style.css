@@ -1,14 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
  *{
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
-
+:root {
+    --color: #1cb9c2;
+    --colorL:#616161;
+    --sombra:4px 2px 13px 0px rgb(23 213 219 / 92%);
+    
+  }
+/* barra de navegacion */
 header{
     width: 100%;
     box-shadow: 0px -3px 20px 2px #37c4b0;
-    background: #b7ffe7;
+    background: #88f2cf;
     top: 0;
     left: 0;
     height: 80px;
@@ -37,7 +42,7 @@ header .nav .nav-menu .nav-menu-item {
 header .nav .nav-menu .nav-menu-item .nav-link{
   
     text-decoration: none;
-    color:#616161;
+    color:var(--colorL);
 }
 
 header .nav .nav-menu .nav-menu-item .nav-link:hover{
@@ -62,9 +67,6 @@ header .nav .nav-menu .nav-menu-item .nav-link:hover{
        
 } 
     
-
-    
-    
     header .nav .nav-menu .nav-menu-item .nav-link:hover{
         
      background: none;
@@ -80,10 +82,10 @@ header .nav .nav-menu .nav-menu-item .nav-link:hover{
 
 @media(max-width: 580px){
 header{
-    width: 34em;
+    width: 36rem;
 }
 }
-
+/* banner  */
 .info1{
     
     text-align: center;
@@ -113,7 +115,8 @@ header{
 
    
  .info1 .info .info-text{
-    padding: 44px;
+    padding-right: 38px;
+    padding-top: 26px;
     display: flex;
     flex-direction: column;
    
@@ -124,13 +127,13 @@ header{
     margin-top: 0;
     margin-bottom: 5px;
     font-weight: 800;
-    color:#616161;
+    color:var(--colorL);
     
 }
  .info1 .info .info-text .nombre{
     margin-top: 0;
     margin-bottom: 5px;
-    color: #6cc3b4;
+    color: var(--color);
     font-size: 41px;
     font-weight: bold;
     font-family: 'Titan One', cursive;
@@ -138,14 +141,14 @@ header{
 }
 
 .info1 .info .info-text .escrito{
-    color: #616161;
+    color: var(--colorL);
     font-size: 21px;
     margin-bottom: 40px;
 }
 
 .info1 .info-text .button{
-    background-color: #1cb9c2;
-    color:#616161;
+    background-color:var(--color);
+    color:var(--colorL);
     padding: 15px 40px;
     border-radius: 100px;
     font-weight: 500;
@@ -183,7 +186,7 @@ header{
 .cono1 .cono-completo .cono-title{
     font-size: 45px;
     font-weight: 900;
-    color:#616161;
+    color:var(--colorL);
 }
 .cono1 .cono-completo .cono-descrip{
     max-width: 400px;
@@ -222,7 +225,7 @@ header{
 .cono1 .cono-completo .cono-contenedor .cono-icon-title{
     font-size: 1.25em;
     font-weight: 700;
-    color:#616161;
+    color:var(--colorL);
 }
 @media(max-width: 580px){
     .cono1{
@@ -239,13 +242,12 @@ header{
         padding-top: 5em;
         padding-bottom: 6em;
     
-    
     }
      
    }
 .cita{
-    background-color: #00BFA6;
-    color:#616161;
+    background-color: var(--color);
+    color:var(--colorL);
     padding: 3em;
 }
 .cita .cita-descrip{
@@ -278,8 +280,6 @@ p{
  @media(max-width: 710px){
         .cita{
             padding: 2em 4em;
-          
-        
         }
         }
 
@@ -298,7 +298,7 @@ p{
 .proyect .proyect-title{
     font-size: 45px;
     font-weight: 900;
-    color:#616161;
+    color:var(--colorL);
 }
 .proyect .proyect-parrafo{
     max-width: 400px;
@@ -331,7 +331,7 @@ p{
     margin-top: 20px;
 }
 .proyect-name{
-    color:#616161;
+    color:var(--colorL);
 }
 @media(max-width: 580px){
     .proyect{
@@ -377,7 +377,6 @@ p{
     text-align: left;
     background-color: #ffffff;
     padding: 80px 60px;
-    border-radius: 15px;
     border: 1px solid #e0e0e0;
 }
 .formulario .formulario-cont .formula-contact .formula-colum{
@@ -390,7 +389,7 @@ p{
     margin-top: 0;
     margin-bottom: 30px;
     font-size: 40px;
-    color:#616161;
+    color:var(--colorL);
 }
 .formula-colum .formula-parrafo{
     max-width: 400px;
@@ -408,7 +407,7 @@ p{
 .item{
     text-decoration: none;
     display: flex;
-    color:#616161;
+    color:var(--colorL);
    
 }
 .item:hover{
@@ -460,14 +459,12 @@ color: #ec9b0d;
     width: 100%;
 
 }
-/* input :placeholder-shown{
 
-} */
 textarea:hover{
-    box-shadow: 4px 2px 13px 0px rgb(23 213 219 / 92%);
+    box-shadow: var(--sombra)
 }  
 input:hover{
-    box-shadow: 4px 2px 13px 0px rgb(23 213 219 / 92%);
+    box-shadow: var(--sombra)
 }   
 
 button{
@@ -522,7 +519,7 @@ footer{
 .nave-ul ,.nave-li, a{
     list-style: none;
  font-size: 14px;
- 
+
  margin: 14px;
     text-decoration: none;
    font-size: 20px;
@@ -544,7 +541,7 @@ footer .nave-ul .nave-li .fo{
       font-size: 1.2rem;
       line-height: 1.7rem;
       text-align: center;
-      /* color:#616161; */
+      
 }
 footer .nave-ul .nave-li .fo:hover{
 background: #9de9ed;
